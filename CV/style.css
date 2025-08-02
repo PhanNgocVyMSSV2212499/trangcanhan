@@ -1,0 +1,185 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: #f9f7fd;
+  color: #333;
+  line-height: 1.6;
+  padding-top: 60px; /* Để tránh bị thanh bar che mất nội dung */
+}
+
+/* Thanh điều hướng */
+.bar {
+  background-color: rgb(28, 238, 192);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 999;
+}
+
+/* Danh sách menu nằm ngang và tự co lại khi thu nhỏ */
+.bar ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  list-style: none;
+  margin: 0;
+  padding: 10px 20px;
+}
+
+/* Mỗi mục trong menu */
+.bar li {
+  white-space: nowrap;
+}
+
+/* Link trong menu */
+.bar li a {
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+  display: inline-block;
+  padding: 10px 14px;
+  border-radius: 12px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+/* Hiệu ứng khi hover */
+.bar li a:hover {
+  background-color: #00bfa5;
+  transform: scale(1.15);
+}
+.my {
+  text-align: center;
+  background: rgb(223, 76, 76);
+  padding: 40px 20px;
+  margin: 30px auto;
+  max-width: 1000px;
+  border-radius: 20px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+}
+.my p {
+  color: white;
+}
+.my img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 4px solid rgb(28, 238, 192);
+  margin-bottom: 20px;
+}
+.contact {
+  max-width: 1000px;
+  border-radius: 12px;
+  text-align: center;
+  padding: 40px 20px;
+  margin: 30px auto;
+  max-width: 1000px;
+  border-radius: 20px;
+  background-color: rgb(28, 238, 192);
+}
+.contact img {
+  width: 75px;
+  height: 75px;
+  object-fit: cover;
+  margin-bottom: 20px;
+}
+
+.skills-section {
+  max-width: 1000px;
+  margin: 30px auto;
+  padding: 40px 20px;
+  border-radius: 20px;
+  background-color: rgb(28, 238, 192);
+  text-align: center;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+}
+
+.skills-section h2 {
+  font-size: 28px;
+  margin-bottom: 30px;
+  color: white;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 16px;
+  justify-items: center;
+}
+
+.skill-item {
+  background-color: white;
+  color: #333;
+  padding: 14px 18px;
+  border-radius: 12px;
+  font-weight: 600;
+  width: 100%;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.skill-item:hover {
+  background-color: #00bfa5;
+  color: white;
+  transform: scale(1.05);
+}
+.hobbies,
+.muctieu,
+.Chungchi {
+  background-color: #ffffff;
+  margin: 30px auto;
+  padding: 25px;
+  max-width: 1000px;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.08);
+}
+.hobbies h2,
+.muctieu h2,
+.Chungchi h2 {
+  margin-bottom: 15px;
+  color: #27ae60;
+}
+.hobbies ul {
+  list-style: square inside;
+  padding-left: 20px;
+}
+.hobbies ul li {
+  margin: 8px 0;
+}
+.muctieu p {
+  margin-bottom: 10px;
+}
+
+/* Chứng chỉ */
+.Chungchi p {
+  margin: 8px 0;
+}
+
+/* Footer */
+.footer {
+  background-color: #2c3e50;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+  margin-top: 50px;
+}
+
+.footer-links {
+  margin-top: 10px;
+}
+
+.footer-links a {
+  color: #ecf0f1;
+  margin: 0 10px;
+  text-decoration: none;
+}
+
+.footer-links a:hover {
+  color: #2ecc71;
+}
